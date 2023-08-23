@@ -1,6 +1,13 @@
 .hero {
     padding-top: 64px;
     padding-bottom: 100px;
+    background-image: linear-gradient(#000, #161616);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     &__nome {
         font-size: 132px;
@@ -12,7 +19,7 @@
     &__image-logo {
         max-width: 240px;
         width: 100%;
-        padding: 32px 0;
+        padding: 28px 0;
         display: block;
         margin: 0 auto;
     }
@@ -22,6 +29,7 @@
         color: #fff;
         text-align: center;
     }
+
     &__infos {
         max-width: 720px;
         width: 100%;
@@ -51,6 +59,22 @@
                 font-size: 18px;
             }
         }
+
+        &__button {
+            border: none;
+            padding: 8px;
+            background-color: #4f2ebd;
+            color: #fff;
+            cursor: pointer;
+            display: block;
+            margin-left: 16px;
+
+        }
+    }
+
+    &__right__image {
+        max-width: 220px;
+        width: 100%;
     }
 
 }

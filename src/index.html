@@ -13,23 +13,33 @@
 <body>
     <header class="hero">
         <div class="container">
-            <p class="hero__nome">Lindberg</p>
-            <img class="hero__image-logo" src="./images/logo.png" alt="">
-            <p class="hero__text">O meu aniversario começa em <b>60d 12h 22m 05s</b></p>
-            <ul class="hero__infos">
-                <li class="hero__infos__item">
-                    <span class="material-symbols-outlined hero__infos__item__icon">calendar_month</span>
-                    <p class="hero__infos__item__text">17/11/2023</p>
-                </li>
-                <li class="hero__infos__item">
-                    <span class="material-symbols-outlined hero__infos__item__icon">schedule</span>
-                    <p class="hero__infos__item__text">22h</p>
-                </li>
-                <li class="hero__infos__item">
-                    <span class="material-symbols-outlined hero__infos__item__icon">location_on</span>
-                    <p class="hero__infos__item__text">Rua 123, Brasilia-DF</p>
-                </li>
-            </ul>
+            <div class="hero__left">
+                <p class="hero__nome">Lindberg</p>
+                <img class="hero__image-logo" src="./images/logo.png" alt="">
+                <p class="hero__text">O meu aniversario começa em <b><span id="contador"></span></b></p>
+                <ul class="hero__infos">
+                    <li class="hero__infos__item">
+                        <span class="material-symbols-outlined hero__infos__item__icon">calendar_month</span>
+                        <p class="hero__infos__item__text">17/11/2023</p>
+                    </li>
+                    <li class="hero__infos__item">
+                        <span class="material-symbols-outlined hero__infos__item__icon">schedule</span>
+                        <p class="hero__infos__item__text">22h</p>
+                    </li>
+                    <li class="hero__infos__item">
+                        <span class="material-symbols-outlined hero__infos__item__icon">location_on</span>
+                        <p class="hero__infos__item__text">Rua 123, Brasilia-DF</p>
+                    </li>
+                    <li class="hero__infos__item">
+                        <button class="hero__infos__button">
+                            Confirmar presença
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="hero__right">
+                <img class="hero__right__image" src="./images/balloon.png" alt="">
+            </div>
         </div>
         
     </header>
