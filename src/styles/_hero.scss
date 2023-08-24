@@ -1,19 +1,30 @@
+@use 'variaveis';
+
 .hero {
     padding-top: 64px;
     padding-bottom: 100px;
-    background-image: linear-gradient(#000, #161616);
+    background-image: linear-gradient(variaveis.$black2, variaveis.$black1);
 
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: 640px) {
+            display: block;
+        }
     }
 
     &__nome {
         font-size: 132px;
-        color: #e4cf14;
+        color: variaveis.$yellow;
         font-family: 'Kaushan Script', cursive;
         text-align: center;
+
+        @media (max-width: 640px) {
+            font-size: 64px;
+        }
+        
     }
 
     &__image-logo {
@@ -26,7 +37,7 @@
 
     &__text {
         font-size: 28px;
-        color: #fff;
+        color: variaveis.$white;
         text-align: center;
     }
 
@@ -39,19 +50,27 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #fff;
+        background-color: variaveis.$white;
         border-radius: 4px;
+
+        @media (max-width: 640px) {
+            display: block;
+        }
 
         &__item {
             display: flex;
             align-items: center;
+
+            @media (max-width: 640px) {
+                margin-bottom: 14px;
+            }
 
             span {
                 font-size: 56px;
             }
 
             &__icon {
-                color: #e4cf14;
+                color: variaveis.$yellow;
                 margin-right: 12px;
             }
 
@@ -63,11 +82,15 @@
         &__button {
             border: none;
             padding: 8px;
-            background-color: #4f2ebd;
+            background-color: variaveis.$purple;
             color: #fff;
             cursor: pointer;
             display: block;
             margin-left: 16px;
+
+            @media (max-width: 640px) {
+                width: 100%;
+            }
 
         }
     }
@@ -75,6 +98,13 @@
     &__right__image {
         max-width: 220px;
         width: 100%;
+
+        @media (max-width: 640px) {
+            display: block;
+            margin: 16px auto;
+            max-width: 120px;
+            width: 100%;
+        }
     }
 
 }
